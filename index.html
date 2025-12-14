@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nehal Atiq | Creative Software Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-bg': '#000000', 
+                        'dark-card': '#0A0A0A',
+                        'color-accent': '#9333EA', 
+                        'color-light-accent': '#C084FC', 
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-gray-100 antialiased">
+
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 bg-dark-bg/95 backdrop-blur-sm border-b border-[#111111] transition-shadow duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center h-16 relative justify-between">
+                
+                <a href="#hero" class="text-2xl font-extrabold tracking-tight gradient-text transition duration-300 hover:opacity-80 flex-shrink-0 z-10">
+                    N. Atiq
+                </a>
+                
+                <div class="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-6 z-0">
+                    <a href="#hero" class="text-sm font-medium text-color-accent transition hover:text-white">Home</a>
+                    <a href="#services" class="text-sm font-medium hover:text-color-accent transition">Services</a>
+                    <a href="#about" class="text-sm font-medium hover:text-color-accent transition">About</a>
+                    <a href="#projects" class="text-sm font-medium hover:text-color-accent transition">Portfolio</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-color-accent transition">Contact</a>
+                </div>
+
+                <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 text-sm font-semibold rounded-lg shadow-lg transition duration-300 transform hover:scale-105 bg-gradient-to-r from-color-accent to-color-light-accent hover:opacity-90 text-dark-bg ring-2 ring-color-accent/0 hover:ring-color-accent/50 flex-shrink-0 z-10">
+                    Hire Me!
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-16">
+
+        <section id="hero" class="relative overflow-hidden pt-16 pb-28 md:pt-32 md:pb-40 border-b border-[#111111] bg-dark-bg">
+            <div class="absolute inset-0 z-0 opacity-10" style="background: radial-gradient(circle at 10% 10%, rgba(147, 51, 234, 0.1) 0%, transparent 40%), radial-gradient(circle at 90% 90%, rgba(10, 10, 10, 0.15) 0%, transparent 40%);"></div>
+
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+
+                    <div class="md:col-span-7 text-center md:text-left order-2 md:order-1">
+                        <p class="text-xl text-color-accent mb-2 font-light">Hello! I am...</p>
+                        
+                        <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 leading-none">
+                            <span class="gradient-text">Nehal Atiq</span>
+                        </h1>
+                        <h2 class="text-3xl text-gray-200 mb-8 font-light">
+                            Creative Software Specialist & <span class="text-color-accent">Digital Designer</span>
+                        </h2>
+                        
+                        <div class="flex flex-wrap justify-center md:justify-start gap-8 mb-10">
+                            <div class="text-center">
+                                <p class="text-3xl font-bold gradient-text">5+</p>
+                                <p class="text-sm text-gray-400">Years of Experience</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-3xl font-bold gradient-text">40+</p>
+                                <p class="text-sm text-gray-400">Successful Projects</p>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-3xl font-bold gradient-text">10+</p>
+                                <p class="text-sm text-gray-400">Satisfied Clients</p>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center md:justify-start gap-4">
+                            <a href="#" class="inline-flex items-center justify-center px-7 py-3 text-base font-semibold rounded-xl shadow-lg transition duration-300 transform hover:scale-105 bg-gradient-to-r from-color-accent to-color-light-accent hover:opacity-90 text-dark-bg ring-2 ring-color-accent/0 hover:ring-color-accent/50">
+                                Download Resume
+                                <i data-lucide="download" class="w-4 h-4 ml-2"></i>
+                            </a>
+                            <!-- Secondary Button: Contact Me -->
+                            <a href="#contact" class="inline-flex items-center justify-center px-7 py-3 text-base font-semibold rounded-xl transition duration-300 transform hover:bg-dark-card border border-color-accent text-color-accent hover:text-white">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Profile Image -->
+                    <div class="md:col-span-5 flex justify-center md:justify-start order-1 md:order-2">
+                        <!-- Profile Image Container with Purple Ring Effect, using near-black for placeholder -->
+<div class="w-70 h-70 rounded-full  overflow-hidden shadow-2xl ring-4 ring-color-accent ring-offset-4 ring-offset-dark-bg bg-dark-card/50 flex items-center justify-center">
+    <img src="download.png" alt="Nehal Atiq" class="w-full h-full object-cover rounded-full">
+
+                            <!-- Placeholder image URL - Text color set to Purple for contrast -->
+                            <img src="download.png" alt="Nehal Atiq" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Services Section (Near-Black Background) -->
+        <section id="services" class="py-20 md:py-32 border-b border-[#111111] bg-dark-card">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4 text-center gradient-text">Services</h2>
+                <p class="text-lg text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                    Transforming complex ideas into intuitive and scalable digital experiences.
+                </p>
+
+                <!-- Responsive 2x3 Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- All Service Cards use the slightly darker near-black background -->
+                    <!-- Service Card 1 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="layout-grid" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Digital Product Design</h3>
+                        <p class="text-gray-400 text-sm">Crafting clean, user-centric interfaces for web and mobile, from wireframe to final prototype.</p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="code" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Front-End Engineering</h3>
+                        <p class="text-gray-400 text-sm">Converting design mockups into pixel-perfect, responsive front-end code (React, HTML/CSS, Tailwind).</p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="bar-chart-3" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Data Visualization</h3>
+                        <p class="text-gray-400 text-sm">Intuitive creation of complex data dashboards and visualizations (utilizing libraries like D3.js).</p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="pen-tool" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Design Strategy</h3>
+                        <p class="text-gray-400 text-sm">Developing comprehensive strategies that align business goals with user needs and technical feasibility.</p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="globe" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Web Modernization</h3>
+                        <p class="text-gray-400 text-sm">Modernization of existing platforms, focusing on up-to-date design, speed, and mobile responsiveness.</p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="p-8 bg-dark-bg rounded-2xl shadow-xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30">
+                        <i data-lucide="video" class="w-10 h-10 text-color-accent mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-100">Digital Media Production</h3>
+                        <p class="text-gray-400 text-sm">High-quality video editing and production for promotional and educational content (Adobe Suite).</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section (Pure Black Background) -->
+        <section id="skills" class="py-20 md:py-32 bg-dark-bg border-t border-b border-[#111111]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4 text-center gradient-text">My Expertise (Core Skills)</h2>
+                <p class="text-lg text-center text-gray-500 mb-16 max-w-2xl mx-auto">
+                    Technical proficiency in modern design tools and development technologies.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <!-- Skills Column 1 -->
+                    <div class="space-y-8">
+                        <!-- Skill 1: Figma -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="figma" class="w-5 h-5 mr-2"></i> Figma & Sketch</span>
+                                <!-- Accent color changed to Deep Violet -->
+                                <span class="font-bold text-color-accent">95%</span>
+                            </div>
+                            <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <!-- Gradient updated to Purple -->
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 2: React/Front-end -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="atom" class="w-5 h-5 mr-2"></i> React & JavaScript</span>
+                                <span class="font-bold text-color-accent">80%</span>
+                            </div>
+                             <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 3: Design Systems -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="component" class="w-5 h-5 mr-2"></i> Design Systems & Guidelines</span>
+                                <span class="font-bold text-color-accent">90%</span>
+                            </div>
+                             <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skills Column 2 -->
+                    <div class="space-y-8">
+                         <!-- Skill 4: HTML/CSS/Tailwind -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="code-square" class="w-5 h-5 mr-2"></i> HTML/CSS/Tailwind</span>
+                                <span class="font-bold text-color-accent">95%</span>
+                            </div>
+                             <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <!-- Skill 5: Adobe Suite (Video Editing) -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="film" class="w-5 h-5 mr-2"></i> Video Editing (Adobe Creative Suite)</span>
+                                <span class="font-bold text-color-accent">75%</span>
+                            </div>
+                             <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                         <!-- Skill 6: Prototyping -->
+                        <div class="skill-item">
+                            <div class="flex justify-between items-center mb-1">
+                                <span class="font-medium text-gray-300 flex items-center"><i data-lucide="pen-tool" class="w-5 h-5 mr-2"></i> Prototyping & Testing</span>
+                                <span class="font-bold text-color-accent">85%</span>
+                            </div>
+                             <!-- Skill bar track is near-black -->
+                            <div class="w-full bg-dark-card rounded-full h-3">
+                                <div class="skill-bar-fill bg-gradient-to-r from-color-accent to-color-light-accent h-3 rounded-full shadow-lg shadow-color-accent/30" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. About Me Section (Near-Black Background) -->
+        <section id="about" class="py-20 md:py-32 border-t border-[#111111] bg-dark-card">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4 text-center gradient-text">About Me</h2>
+                <p class="text-lg text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                    Expertise in creative technology, design implementation, and digital media production.
+                </p>
+
+                <div class="grid md:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column: Image -->
+                    <div class="md:col-span-5 flex justify-center">
+                        <!-- Image container uses near-black background for placeholder -->
+                        <div class="w-full max-w-xs rounded-xl overflow-hidden shadow-2xl profile-ring transition duration-500 hover:scale-[1.03]">
+                            <!-- Placeholder Image (Background set to dark-card color) -->
+                            <img src="https://placehold.co/400x500/0A0A0A/9333EA?text=About+Image" alt="Nehal Atiq" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text Content -->
+                    <div class="md:col-span-7 space-y-6 text-lg text-gray-300">
+                        <p>
+                            I am Nehal Atiq, a dedicated Creative Software Specialist with 5+ years of experience. My focus is on creating intuitive, engaging, and highly functional digital products. My core philosophy is that design must solve real problems while delivering an exceptional user experience.
+                        </p>
+                        <p>
+                            My expertise covers the full spectrum of development and design: from initial research, wireframing, and high-fidelity prototyping (using Figma/Sketch) to collaborating with developers to ensure pixel-perfect and scalable implementation.
+                        </p>
+                        <p>
+                            I also possess strong skills in **Front-End Development** (React/Tailwind) and **Digital Media Production** (Adobe Creative Suite), allowing me to provide holistic, end-to-end solutions for a wide range of projects. I am technically proficient and passionate about continuous learning.
+                        </p>
+
+                        <!-- Call to Action Button - Updated Gradient (Purple) -->
+                        <div class="pt-4">
+                            <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-lg shadow-xl transition duration-300 transform hover:scale-[1.02] bg-gradient-to-r from-color-accent to-color-light-accent hover:opacity-90 text-dark-bg ring-2 ring-color-accent/0 hover:ring-color-accent/50">
+                                View My Portfolio
+                                <i data-lucide="monitor-dot" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 5. Projects/Portfolio Section (Pure Black Background) -->
+        <section id="projects" class="py-20 md:py-32 bg-dark-bg border-t border-b border-[#111111]">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4 text-center gradient-text">Portfolio (Showcase)</h2>
+                <p class="text-lg text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                    Showcasing my work across software development, digital design, and media projects.
+                </p>
+
+                <!-- Responsive Project Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- All Project Cards use the slightly darker near-black background -->
+                    <!-- Project Card 1 -->
+                    <div class="bg-dark-card rounded-xl overflow-hidden shadow-2xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30 group">
+                        <!-- Image Placeholder uses the pure black background for contrast inside the card -->
+                        <div class="w-full h-48 bg-dark-bg flex items-center justify-center text-color-accent font-semibold text-lg border-b border-gray-900">
+                            [Fintech Design System]
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-color-accent transition">Scalable Fintech Design System</h3>
+                            <p class="text-gray-400 text-sm">A comprehensive design library for a secure banking application, focused on accessibility and consistency.</p>
+                            <!-- Purple Accent for link -->
+                            <a href="#" class="mt-3 inline-block text-sm text-color-accent hover:text-gray-300 font-medium flex items-center">View Case Study <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="bg-dark-card rounded-xl overflow-hidden shadow-2xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30 group">
+                        <div class="w-full h-48 bg-dark-bg flex items-center justify-center text-color-accent font-semibold text-lg border-b border-gray-900">
+                            [E-Commerce App Redesign]
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-color-accent transition">E-Commerce App Redesign & Code</h3>
+                            <p class="text-gray-400 text-sm">Improved user flow and visual design, resulting in a 20% conversion rate increase, plus front-end implementation.</p>
+                            <a href="#" class="mt-3 inline-block text-sm text-color-accent hover:text-gray-300 font-medium flex items-center">View Case Study <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3 -->
+                    <div class="bg-dark-card rounded-xl overflow-hidden shadow-2xl border border-gray-900 transition duration-300 transform hover:scale-[1.03] hover:border-color-accent hover:shadow-color-accent/30 group">
+                        <div class="w-full h-48 bg-dark-bg flex items-center justify-center text-color-accent font-semibold text-lg border-b border-gray-900">
+                            [Video Portfolio Website]
+                        </div>
+                        <div class="p-5">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-color-accent transition">Digital Media Showcase Website</h3>
+                            <p class="text-gray-400 text-sm">Created a high-impact, responsive website to display video editing and motion graphics work.</p>
+                            <a href="#" class="mt-3 inline-block text-sm text-color-accent hover:text-gray-300 font-medium flex items-center">View Case Study <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 6. Contact Section (Near-Black Background) -->
+        <section id="contact" class="py-20 md:py-32 bg-dark-card border-t border-[#111111]">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-4 text-center gradient-text">
+                    <i data-lucide="mail" class="inline-block w-8 h-8 mr-3 text-color-accent"></i>
+                    Get in Touch
+                </h2>
+                <p class="text-lg text-center text-gray-500 mb-16">
+                    Let's build something exceptional together.
+                </p>
+
+                <!-- Form container uses the pure black background -->
+                <div class="max-w-3xl mx-auto p-10 bg-dark-bg rounded-2xl shadow-2xl border border-gray-900">
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-6">
+                        <!-- Form Inputs -->
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+                            <!-- Input background is set to near-black -->
+                            <input type="text" id="name" required class="w-full px-5 py-3 bg-dark-card border border-gray-700 rounded-xl focus:ring-color-accent focus:border-color-accent text-gray-100 placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                             <!-- Input background is set to near-black -->
+                            <input type="email" id="email" required class="w-full px-5 py-3 bg-dark-card border border-gray-700 rounded-xl focus:ring-color-accent focus:border-color-accent text-gray-100 placeholder-gray-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                             <!-- Textarea background is set to near-black -->
+                            <textarea id="message" rows="5" required class="w-full px-5 py-3 bg-dark-card border border-gray-700 rounded-xl focus:ring-color-accent focus:border-color-accent text-gray-100 placeholder-gray-500"></textarea>
+                        </div>
+                        <!-- Submit Button - Updated Gradient (Purple) -->
+                        <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 text-base font-semibold rounded-xl shadow-xl transition duration-300 transform hover:scale-[1.01] bg-gradient-to-r from-color-accent to-color-light-accent hover:opacity-90 text-dark-bg ring-2 ring-color-accent/0 hover:ring-color-accent/50">
+                            Send Message
+                            <i data-lucide="send" class="w-5 h-5 ml-2"></i>
+                        </button>
+                    </form>
+
+                    <!-- Custom Alert/Message Box -->
+                    <div id="message-box" class="mt-8 hidden p-4 rounded-lg text-center font-medium" role="alert"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 7. Detailed Footer Section (Near-Black Background) -->
+    <section id="detailed-footer" class="py-16 md:py-24 bg-dark-card border-t border-[#111111]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <!-- LOGO (Purple Gradient) -->
+            <a href="#hero" class="text-4xl font-extrabold tracking-tight gradient-text inline-block transition duration-300 hover:opacity-80">
+                LOGO
+            </a>
+
+            <!-- Navigation Links (Purple Accent) -->
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-lg font-medium text-gray-300">
+                <a href="#hero" class="hover:text-color-accent transition">Home</a>
+                <a href="#services" class="hover:text-color-accent transition">Services</a>
+                <a href="#about" class="hover:text-color-accent transition">About me</a>
+                <a href="#projects" class="hover:text-color-accent transition">Portfolio</a>
+                <a href="#contact" class="hover:text-color-accent transition">Contact me</a>
+            </div>
+
+            <!-- Social Icons (Pure Black Background) -->
+            <div class="flex justify-center space-x-4 text-gray-400 pt-4">
+                <!-- Social Icon backgrounds are pure black -->
+                <a href="#" target="_blank" class="hover:text-color-accent transition p-3 bg-dark-bg rounded-full ring-1 ring-gray-800 hover:ring-color-accent"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="#" target="_blank" class="hover:text-color-accent transition p-3 bg-dark-bg rounded-full ring-1 ring-gray-800 hover:ring-color-accent"><i data-lucide="twitter" class="w-6 h-6"></i></a>
+                <a href="#" target="_blank" class="hover:text-color-accent transition p-3 bg-dark-bg rounded-full ring-1 ring-gray-800 hover:ring-color-accent"><i data-lucide="linkedin" class="w-6 h-6"></i></a>
+                <a href="#" target="_blank" class="hover:text-color-accent transition p-3 bg-dark-bg rounded-full ring-1 ring-gray-800 hover:ring-color-accent"><i data-lucide="dribbble" class="w-6 h-6"></i></a>
+            </div>
+
+            <!-- Contact Details (Purple Accent) -->
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-gray-300 text-lg pt-4">
+                <span class="flex items-center">
+                    <i data-lucide="mail" class="w-5 h-5 mr-2 text-color-accent"></i>
+                    mahmood.fazile7005@gmail.com
+                </span>
+                <span class="flex items-center">
+                    <i data-lucide="phone" class="w-5 h-5 mr-2 text-color-accent"></i>
+                    +91 729 107 005
+                </span>
+            </div>
+
+            <!-- Designed By Line -->
+            <p class="text-gray-500 text-sm pt-8">
+                Designed by Nehal Atiq, Creative Specialist
+            </p>
+        </div>
+    </section>
+
+    <!-- Copyright Footer (Pure Black Background) -->
+    <footer class="py-4 border-t border-[#111111] bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            <p>&copy; <span id="current-year-footer"></span> Nehal Atiq. All rights reserved. | Crafted with <span class="text-color-accent">&hearts;</span></p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Set current year in footer
+        document.getElementById('current-year-footer').textContent = new Date().getFullYear(); 
+
+        // Handle Form Submission (Simulated)
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const messageBox = document.getElementById('message-box');
+
+            // Show loading state - Using Dark Gray/Accent colors
+            messageBox.className = 'mt-8 p-4 rounded-xl text-center font-medium bg-dark-card/70 text-color-accent block transition-all';
+            messageBox.textContent = `Sending message, please wait...`;
+            
+            // Simulate API delay
+            setTimeout(() => {
+                // Success message - Using Purple shades for consistency
+                messageBox.className = 'mt-8 p-4 rounded-xl text-center font-medium bg-color-accent/20 text-color-accent block transition-all';
+                messageBox.textContent = `Thank you, ${name}! Your message has been sent successfully. I will contact you shortly.`;
+
+                // Clear form
+                event.target.reset();
+
+                // Optional: Hide message after a few seconds
+                setTimeout(() => {
+                    messageBox.classList.add('hidden');
+                }, 8000);
+
+            }, 2000); // 2 second delay
+        }
+
+        // Smooth Scroll Logic
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offset = document.getElementById('navbar').offsetHeight;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = targetElement.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Sticky Navbar Shadow on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            // Adding a subtle purple-tinged shadow
+            if (window.scrollY > 0) {
+                navbar.classList.add('shadow-xl', 'bg-dark-bg/95', 'shadow-color-accent/20'); 
+            } else {
+                navbar.classList.remove('shadow-xl', 'shadow-color-accent/20');
+            }
+        });
+    </script>
+
+</body>
+</html>
