@@ -1,0 +1,50 @@
+   body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #000000; /* Pure Black Background */
+        }
+        body::-webkit-scrollbar-thumb {
+            /* Using the Deep Purple/Violet palette for a premium look */
+            background: linear-gradient(180deg, #080c50, #0926c9); 
+            border-radius: 4px;
+        }
+
+        /* Applying the Inter font via Tailwind config */
+        @layer base {
+            html {
+                font-family: 'Inter', sans-serif;
+            }
+        }
+
+        /* Custom gradient text utility - Using Deep Violet/Purple accent */
+        .gradient-text {
+            /* DEEP PURPLE GRADIENT: Deep Violet to Light Grape */
+            background-image: linear-gradient(to right, #110ece, #0d48eb); 
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            filter: drop-shadow(0 0 1px #333fea); /* Subtle violet glow */
+        }
+
+        /* Keyframes for skill bar animation */
+        @keyframes fillSkill {
+            from { width: 0; }
+        }
+        .skill-bar-fill {
+            animation: fillSkill 1.5s ease-out forwards;
+        }
+
+        /* Hero Image Effect: Subtle Neon Ring (Updated to Purple) */
+        .profile-ring {
+            /* Purple glow on near-black background */
+            box-shadow: 0 0 10px rgba(68, 97, 175, 0.5), 0 0 20px rgba(10, 10, 10, 0.7); 
+            transition: all 0.5s ease-in-out;
+            border: 1px solid #111111; /* Subtle dark border */
+        }
+        .profile-ring:hover {
+            box-shadow: 0 0 15px rgba(63, 51, 234, 0.7), 0 0 30px rgba(10, 10, 10, 0.9); 
+            transform: scale(1.02);
+        }
+        
